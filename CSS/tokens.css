@@ -1,0 +1,25 @@
+:root {
+  /* Nilai mentah */
+  --warna-utama: #2563eb;
+  --warna-sekunder: #1e40af;
+  --warna-latar: #f8fafc;
+  --warna-teks: #1e293b;
+  --warna-putih: #ffffff;
+  --warna-border: #cbd5e1;
+
+  --jarak-kecil: 0.5rem;
+  --jarak-sedang: 1rem;
+  --jarak-besar: 2rem;
+
+  --radius-kecil: 0.5rem;
+  --radius-besar: 1rem;
+
+  /* Peran */
+  --warna-background: var(--warna-latar);
+  --warna-text-primary: var(--warna-teks);
+  --warna-text-inverse: var(--warna-putih);
+  --warna-accent: var(--warna-utama);
+  --warna-accent-hover: var(--warna-sekunder);
+  --warna-outline: var(--warna-utama);
+  --warna-border-default: var(--warna-border);
+}

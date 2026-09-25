@@ -1,0 +1,51 @@
+/* Tema — warna dan tampilan akhir halaman */
+
+body {
+  background: var(--warna-background);
+  color: var(--warna-text-primary);
+}
+
+.kepala {
+  background: var(--warna-accent);
+  color: var(--warna-text-inverse);
+}
+
+.kepala a {
+  color: var(--warna-text-inverse);
+}
+
+.kepala a:hover {
+  color: var(--warna-text-inverse);
+}
+
+section,
+article,
+details {
+  background: var(--warna-putih);
+}
+
+h1,
+h2 {
+  color: var(--warna-accent);
+}
+
+.kepala h1 {
+  color: var(--warna-text-inverse);
+}
+
+.tagline {
+  color: var(--warna-text-inverse);
+}
+
+button {
+  background: var(--warna-accent);
+  color: var(--warna-text-inverse);
+}
+
+button:hover {
+  background: var(--warna-accent-hover);
+}
+
+.kaki {
+  border-top: 1px solid var(--warna-border-default);
+}

@@ -1,0 +1,87 @@
+/* Komponen — mengatur tampilan elemen-elemen halaman */
+
+.kepala {
+  border-bottom: 2px solid var(--warna-border-default);
+}
+
+.kepala h1 {
+  margin-bottom: var(--jarak-kecil);
+}
+
+.tagline {
+  margin-top: 0;
+}
+
+section,
+article,
+details {
+  padding: var(--jarak-besar);
+  border: 1px solid var(--warna-border-default);
+  border-radius: var(--radius-besar);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.foto img {
+  display: block;
+  margin: 0 auto;
+  border-radius: var(--radius-besar);
+}
+
+figcaption {
+  margin-top: var(--jarak-kecil);
+}
+
+table {
+  border: 1px solid var(--warna-border-default);
+}
+
+th,
+td {
+  padding: var(--jarak-kecil);
+  border: 1px solid var(--warna-border-default);
+  text-align: left;
+}
+
+fieldset {
+  padding: var(--jarak-sedang);
+  border: 1px solid var(--warna-border-default);
+  border-radius: var(--radius-kecil);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: var(--jarak-kecil);
+  border: 1px solid var(--warna-border-default);
+  border-radius: var(--radius-kecil);
+}
+
+button {
+  padding: var(--jarak-kecil) var(--jarak-sedang);
+  border: 0;
+  border-radius: var(--radius-kecil);
+  background: var(--warna-accent);
+  color: var(--warna-text-inverse);
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--warna-accent-hover);
+}
+
+details {
+  cursor: pointer;
+}
+
+details p {
+  cursor: text;
+}
+
+blockquote {
+  margin: 0;
+  padding-left: var(--jarak-sedang);
+  border-left: 4px solid var(--warna-accent);
+}

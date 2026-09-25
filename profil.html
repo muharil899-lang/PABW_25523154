@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--
+  KERANGKA PROFIL — PABW 2026/2027 — Pertemuan 4
+  =================================================
+
+  Tugas Pertemuan 4:
+  1. Mengganti isi dengan data pribadi.
+  2. Menggunakan lima file CSS.
+  3. Menambahkan minimal tiga bagian baru
+     menggunakan elemen semantik yang berbeda.
+-->
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Profil MUHAMMAD SYAHRIR — PABW 2026/2027</title>
+
+  <meta name="description"
+        content="Halaman profil mahasiswa PABW MUHAMMAD SYAHRIR tentang diri, minat, karya, dan kontak.">
+
+  <!-- Lima file CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/Komponen.css">
+  <link rel="stylesheet" href="css/tema.css">
+</head>
+
+<body>
+
+  <!-- Skip link -->
+  <a class="lewati" href="#utama">Lewati ke konten utama</a>
+
+  <!-- HEADER -->
+  <header class="kepala">
+
+    <h1>MUHAMMAD SYAHRIR</h1>
+
+    <p class="tagline">
+      Mahasiswa Informatika yang tertarik pada pengembangan web dan teknologi.
+    </p>
+
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#karya">Karya</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <!-- KONTEN UTAMA -->
+  <main id="utama">
+
+    <!-- BAGIAN TENTANG -->
+    <section id="tentang">
+
+      <h2>Tentang saya</h2>
+
+      <figure class="foto">
+
+        <img
+          src="media/foto-profil.jpg"
+          alt="Foto profil MUHAMMAD SYAHRIR sedang duduk di sebuah meja"
+          width="480"
+          height="480"
+          loading="lazy">
+
+        <figcaption>
+          Foto profil MUHAMMAD SYAHRIR.
+        </figcaption>
+
+      </figure>
+
+      <p>
+        Saya adalah mahasiswa Program Studi Informatika Universitas Islam Indonesia.
+        Saya tertarik pada pengembangan teknologi dan pengembangan web.
+        Saat ini saya sedang mempelajari HTML, CSS, dan dasar-dasar pembuatan halaman web.
+      </p>
+
+
+      <!-- TABEL KEGIATAN -->
+      <table>
+
+        <caption>
+          Kegiatan yang saya ikuti semester ini
+        </caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Kegiatan</th>
+            <th scope="col">Peran</th>
+            <th scope="col">Waktu</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <th scope="row">Praktikum PABW</th>
+            <td>Peserta</td>
+            <td>
+              <time datetime="2026-09">September 2026</time>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">Kelas Terbuka Kampus</th>
+            <td>Peserta</td>
+            <td>
+              <time datetime="2026-10">Oktober 2026</time>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">Organisasi kemahasiswaan</th>
+            <td>Anggota</td>
+            <td>
+              <time datetime="2026">2026</time>
+            </td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </section>
+
+        
+    <!-- TAMBAHAN 1 — ASIDE -->
+    <aside id="minat">
+
+      <h2>Minat Saya</h2>
+
+      <p>
+        Saya memiliki minat pada pengembangan web, pemrograman,
+        dan teknologi informasi. Saya juga tertarik untuk terus
+        mengembangkan kemampuan dalam membuat aplikasi.
+      </p>
+
+    </aside>
+
+
+    <!-- TAMBAHAN 2 — ARTICLE -->
+    <article id="pengalaman">
+
+      <h2>Pengalaman Belajar</h2>
+
+      <p>
+        Selama belajar Informatika, saya mulai mempelajari berbagai
+        dasar pengembangan perangkat lunak. Salah satunya adalah
+        pembuatan halaman web menggunakan HTML dan CSS.
+      </p>
+
+      <p>
+        Melalui praktikum PABW, saya belajar membuat struktur halaman
+        menggunakan HTML semantik, membuat tampilan dengan CSS,
+        serta memperhatikan aksesibilitas halaman web.
+      </p>
+
+    </article>
+
+
+    <!-- KARYA -->
+    <section id="karya">
+
+      <h2>Karya saya</h2>
+
+      <ul>
+
+        <li>
+          Halaman profil mahasiswa menggunakan HTML dan CSS.
+        </li>
+
+        <li>
+          Praktikum PABW tentang HTML semantik dan aksesibilitas.
+        </li>
+
+        <li>
+          Proyek pengembangan aplikasi sebagai tugas perkuliahan.
+        </li>
+
+      </ul>
+
+    </section>
+
+
+    <!-- TAMBAHAN 3 — DETAILS -->
+    <details id="tujuan">
+
+      <summary>
+        <strong>Tujuan Belajar Saya</strong>
+      </summary>
+
+      <h2>Tujuan Belajar</h2>
+
+      <p>
+        Saya ingin meningkatkan kemampuan dalam pengembangan web,
+        khususnya HTML, CSS, dan teknologi web lainnya.
+        Saya juga ingin mampu membuat aplikasi yang bermanfaat
+        dan mudah digunakan.
+      </p>
+
+    </details>
+
+
+    <!-- KONTAK -->
+    <section id="kontak">
+
+      <h2>Hubungi saya</h2>
+
+      <p>
+        Isi formulir berikut. Semua kolom bertanda wajib harus diisi.
+      </p>
+
+
+      <form action="#" method="post">
+
+        <fieldset>
+
+          <legend>Data pengirim</legend>
+
+
+          <!-- NAMA -->
+          <p>
+
+            <label for="nama">
+              Nama lengkap
+            </label>
+
+            <input
+              id="nama"
+              name="nama"
+              type="text"
+              autocomplete="name"
+              required>
+
+          </p>
+
+
+          <!-- EMAIL -->
+          <p>
+
+            <label for="email">
+              Email
+            </label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required>
+
+          </p>
+
+
+          <!-- NIM -->
+          <p>
+
+            <label for="nim">
+              NIM
+            </label>
+
+            <input
+              id="nim"
+              name="nim"
+              type="text"
+              inputmode="numeric"
+              pattern="[0-9]{8}"
+              aria-describedby="nim-bantuan"
+              required>
+
+            <span id="nim-bantuan">
+              Delapan digit angka, contoh 25523154.
+            </span>
+
+          </p>
+
+
+          <!-- PESAN -->
+          <p>
+
+            <label for="pesan">
+              Pesan
+            </label>
+
+            <textarea
+              id="pesan"
+              name="pesan"
+              rows="4"
+              required></textarea>
+
+          </p>
+
+
+          <button type="submit">
+            Kirim
+          </button>
+
+        </fieldset>
+
+      </form>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="kaki">
+
+    <p>
+      MUHAMMAD SYAHRIR · 25523154 ·
+      <time datetime="2026">2026</time>
+    </p>
+
+  </footer>
+
+</body>
+</html>

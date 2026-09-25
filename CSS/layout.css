@@ -1,0 +1,50 @@
+/* Layout — mengatur posisi dan ukuran bagian halaman */
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.kepala {
+  padding: var(--jarak-besar) 0;
+  text-align: center;
+}
+
+.kepala nav ul {
+  display: flex;
+  justify-content: center;
+  gap: var(--jarak-sedang);
+  padding: 0;
+  margin: var(--jarak-sedang) 0 0;
+  list-style: none;
+}
+
+main {
+  display: grid;
+  gap: var(--jarak-besar);
+  padding: var(--jarak-besar) 0;
+}
+
+section,
+article,
+details {
+  width: 100%;
+}
+
+.foto {
+  max-width: 480px;
+  margin: var(--jarak-sedang) auto;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--jarak-besar);
+}
+
+footer {
+  padding: var(--jarak-besar) 0;
+  text-align: center;
+}
