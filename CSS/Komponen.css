@@ -1,4 +1,6 @@
-/* Komponen — mengatur tampilan elemen-elemen halaman */
+/* =========================
+   KOMPONEN HALAMAN
+   ========================= */
 
 .kepala {
   border-bottom: 2px solid var(--warna-border-default);
@@ -12,6 +14,11 @@
   margin-top: 0;
 }
 
+
+/* =========================
+   SECTION / ARTICLE / DETAILS
+   ========================= */
+
 section,
 article,
 details {
@@ -24,6 +31,11 @@ h2 {
   margin-top: 0;
 }
 
+
+/* =========================
+   FOTO
+   ========================= */
+
 .foto img {
   display: block;
   margin: 0 auto;
@@ -33,6 +45,11 @@ h2 {
 figcaption {
   margin-top: var(--jarak-kecil);
 }
+
+
+/* =========================
+   TABEL
+   ========================= */
 
 table {
   border: 1px solid var(--warna-border-default);
@@ -44,6 +61,11 @@ td {
   border: 1px solid var(--warna-border-default);
   text-align: left;
 }
+
+
+/* =========================
+   FORM
+   ========================= */
 
 fieldset {
   padding: var(--jarak-sedang);
@@ -72,6 +94,11 @@ button:hover {
   background: var(--warna-accent-hover);
 }
 
+
+/* =========================
+   DETAILS
+   ========================= */
+
 details {
   cursor: pointer;
 }
@@ -80,8 +107,43 @@ details p {
   cursor: text;
 }
 
+
+/* =========================
+   BLOCKQUOTE
+   ========================= */
+
 blockquote {
   margin: 0;
   padding-left: var(--jarak-sedang);
   border-left: 4px solid var(--warna-accent);
+}
+
+
+/* =========================
+   GALERI / KARTU
+   ========================= */
+
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(16rem, 1fr)
+  );
+  gap: var(--jarak-sedang);
+}
+
+.kartu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--jarak-sedang);
+  min-height: 14rem;
+  min-width: 0;
+}
+
+.kartu h3 {
+  overflow-wrap: anywhere;
+}
+
+.kartu p {
+  overflow-wrap: anywhere;
 }

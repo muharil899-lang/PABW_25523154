@@ -1,0 +1,125 @@
+/* =========================================
+   P6 — RESPONSIF MOBILE-FIRST
+   ========================================= */
+
+/* -----------------------------------------
+   B. GAYA DASAR — LAYAR SEMPIT
+   Berlaku di semua ukuran layar
+   ----------------------------------------- */
+
+.page {
+  min-height: 100dvh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--jarak-sedang);
+}
+
+/* Semua bagian menjadi satu kolom */
+#tentang,
+#minat,
+#pengalaman,
+#karya,
+#tujuan,
+#kontak {
+  grid-column: 1;
+}
+
+/* Galeri satu kolom pada layar sempit */
+.galeri {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--jarak-sedang);
+}
+
+/* Elemen grid tidak boleh memaksa lebar */
+section,
+article,
+aside,
+details {
+  min-width: 0;
+}
+
+/* Gambar tidak boleh melebihi wadah */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Teks menggunakan ukuran relatif */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* -----------------------------------------
+   D. TABEL LEBAR
+   ----------------------------------------- */
+
+.table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Mencegah teks panjang melebarkan grid */
+.kartu,
+section,
+article,
+aside,
+details {
+  min-width: 0;
+}
+
+.kartu h3,
+.kartu p,
+section p,
+article p,
+aside p,
+details p {
+  overflow-wrap: anywhere;
+}
+
+
+/* -----------------------------------------
+   C. TABLET — 48rem
+   Galeri menjadi dua kolom
+   ----------------------------------------- */
+
+@media (min-width: 48rem) {
+  .galeri {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* -----------------------------------------
+   C. DESKTOP — 60rem
+   Sidebar bersanding dengan konten
+   ----------------------------------------- */
+
+@media (min-width: 60rem) {
+  main {
+    grid-template-columns: 16rem 1fr;
+  }
+
+  #minat {
+    grid-column: 1;
+  }
+
+  #tentang,
+  #pengalaman,
+  #tujuan {
+    grid-column: 2;
+  }
+
+  #karya,
+  #kontak {
+    grid-column: 1 / -1;
+  }
+
+  .galeri {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

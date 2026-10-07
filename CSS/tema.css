@@ -1,4 +1,6 @@
-/* Tema — warna dan tampilan akhir halaman */
+/* =========================
+   TEMA TERANG
+   ========================= */
 
 body {
   background: var(--warna-background);
@@ -48,4 +50,72 @@ button:hover {
 
 .kaki {
   border-top: 1px solid var(--warna-border-default);
+}
+
+
+/* =========================
+   TEMA GELAP
+   ========================= */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+      --warna-latar: #000000;
+      --warna-teks: #f8e9ec;
+      --warna-putih: #000000;
+      --warna-border: #ffffff;
+
+     --warna-utama: #4000ff;
+     --warna-sekunder: #6100ff;
+
+    /* Tetap terang untuk teks di atas background accent */
+    --warna-text-inverse: #ffffff;
+  }
+
+  body {
+    background: var(--warna-background);
+    color: var(--warna-text-primary);
+  }
+
+  section,
+  article,
+  details {
+    background: var(--warna-putih);
+  }
+
+  a {
+    color: var(--warna-accent);
+  }
+
+  a:hover {
+    color: var(--warna-accent-hover);
+  }
+
+  .kepala {
+    background: var(--warna-accent);
+  }
+
+  h1,
+  h2 {
+    color: var(--warna-accent);
+  }
+
+  input,
+  textarea {
+    background: #3a2b30;
+    color: var(--warna-text-primary);
+    border-color: var(--warna-border-default);
+  }
+
+  button {
+    background: var(--warna-accent);
+    color: #21191c;
+  }
+
+  button:hover {
+    background: var(--warna-accent-hover);
+  }
+
+  .kaki {
+    border-top-color: var(--warna-border-default);
+  }
 }

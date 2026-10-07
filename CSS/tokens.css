@@ -1,11 +1,11 @@
 :root {
-  /* Nilai mentah */
-  --warna-utama: #2563eb;
-  --warna-sekunder: #1e40af;
-  --warna-latar: #f8fafc;
-  --warna-teks: #1e293b;
-  --warna-putih: #ffffff;
-  --warna-border: #cbd5e1;
+
+  --warna-utama: #4000ff;
+  --warna-sekunder: #6100ff;
+  --warna-latar: #000000;
+  --warna-teks: #f8e9ec;
+  --warna-putih: #000000;
+  --warna-border: #e8cfd4;
 
   --jarak-kecil: 0.5rem;
   --jarak-sedang: 1rem;
@@ -14,12 +14,16 @@
   --radius-kecil: 0.5rem;
   --radius-besar: 1rem;
 
-  /* Peran */
+  /* =========================
+     TOKEN PERAN
+     ========================= */
   --warna-background: var(--warna-latar);
   --warna-text-primary: var(--warna-teks);
   --warna-text-inverse: var(--warna-putih);
+
   --warna-accent: var(--warna-utama);
   --warna-accent-hover: var(--warna-sekunder);
   --warna-outline: var(--warna-utama);
+
   --warna-border-default: var(--warna-border);
 }

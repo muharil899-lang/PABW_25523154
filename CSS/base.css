@@ -1,3 +1,7 @@
+/* =========================
+   RESET RINGAN
+   ========================= */
+
 * {
   box-sizing: border-box;
 }
@@ -14,6 +18,11 @@ body {
   color: var(--warna-text-primary);
 }
 
+
+/* =========================
+   LINK
+   ========================= */
+
 a {
   color: var(--warna-accent);
 }
@@ -21,6 +30,11 @@ a {
 a:hover {
   color: var(--warna-accent-hover);
 }
+
+
+/* =========================
+   FOCUS
+   ========================= */
 
 a:focus-visible,
 button:focus-visible,
@@ -31,10 +45,20 @@ summary:focus-visible {
   outline-offset: 3px;
 }
 
+
+/* =========================
+   GAMBAR
+   ========================= */
+
 img {
   max-width: 100%;
   height: auto;
 }
+
+
+/* =========================
+   FORM
+   ========================= */
 
 button,
 input,

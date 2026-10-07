@@ -1,10 +1,24 @@
-/* Layout — mengatur posisi dan ukuran bagian halaman */
+/* =========================
+   LAYOUT UTAMA
+   ========================= */
+
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+  min-width: 0;
+}
 
 body {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+
+/* =========================
+   HEADER & NAVBAR
+   ========================= */
 
 .kepala {
   padding: var(--jarak-besar) 0;
@@ -20,11 +34,51 @@ body {
   list-style: none;
 }
 
+
+/* =========================
+   KONTEN UTAMA
+   ========================= */
+
 main {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(16rem, 100%), 1fr)
+  );
   gap: var(--jarak-besar);
   padding: var(--jarak-besar) 0;
+  min-width: 0;
 }
+
+
+/* =========================
+   POSISI BAGIAN
+   ========================= */
+
+#karya {
+  grid-column: 1 / -1;
+}
+
+#kontak {
+  grid-column: 1 / -1;
+}
+
+#minat {
+  grid-column: 1;
+}
+
+#tentang,
+#pengalaman,
+#karya,
+#tujuan,
+#kontak {
+  grid-column: 2;
+}
+
+
+/* =========================
+   LEBAR KOMPONEN
+   ========================= */
 
 section,
 article,
@@ -32,11 +86,21 @@ details {
   width: 100%;
 }
 
+
+/* =========================
+   FOTO PROFIL
+   ========================= */
+
 .foto {
-  max-width: 480px;
+  max-width: 100%;
   margin: var(--jarak-sedang) auto;
   text-align: center;
 }
+
+
+/* =========================
+   TABEL
+   ========================= */
 
 table {
   width: 100%;
@@ -44,7 +108,12 @@ table {
   margin-top: var(--jarak-besar);
 }
 
+
+/* =========================
+   FOOTER
+   ========================= */
+
 footer {
   padding: var(--jarak-besar) 0;
   text-align: center;
-}
+} 

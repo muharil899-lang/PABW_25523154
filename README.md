@@ -1,4 +1,4 @@
-# Praktikum P04 — Design Token untuk Halaman Profil Saya
+# Praktikum P04-P06
 
 Starter: `kerangka-profil.html`. Berkas ini sudah lengkap dan sudah lolos
 W3C Nu Html Checker serta Lighthouse Accessibility. Jangan mengubah
@@ -51,3 +51,28 @@ diselesaikan di luar kelas sampai pukul 23.59 hari yang sama.
 Folder `worksheet-p4/` di dalam repositori GitHub Anda sendiri, berisi
 `profil.html`, `css/`, `media/`, dan `bukti/`. Sudah di-commit dan di-push
 sebelum **pukul 23.59 hari yang sama**. Tidak ada perpanjangan.
+
+### Bagian Tambahan
+
+**1. Minat Saya — `<aside>`**
+Bagian ini menggunakan elemen `<aside>` untuk menampilkan informasi tambahan mengenai minat saya. Bagian ini ditujukan untuk pembaca yang ingin mengetahui bidang yang saya minati di luar informasi utama tentang profil. Isinya menjelaskan ketertarikan saya pada pengembangan web, pemrograman, teknologi informasi, serta pengembangan aplikasi.
+
+**2. Pengalaman Belajar — `<article>`**
+Bagian ini menggunakan elemen `<article>` untuk menjelaskan pengalaman belajar saya selama mempelajari Informatika. Bagian ini ditujukan untuk pembaca yang ingin mengetahui proses dan pengalaman belajar saya. Isinya menjelaskan pembelajaran dasar pengembangan perangkat lunak, HTML, CSS, HTML semantik, dan aksesibilitas web.
+
+**3. Tujuan Belajar Saya — `<details>`**
+Bagian ini menggunakan elemen `<details>` untuk menampilkan tujuan belajar yang dapat dibuka dan ditutup oleh pengguna. Bagian ini ditujukan untuk pembaca yang ingin mengetahui tujuan pengembangan kemampuan saya. Isinya menjelaskan tujuan meningkatkan kemampuan pengembangan web, khususnya HTML dan CSS, serta membuat aplikasi yang bermanfaat dan mudah digunakan.
+
+### Evaluasi
+
+**W3C — Nu Html Checker:**
+Hasil evaluasi dilakukan menggunakan W3C Nu Html Checker setelah penambahan bagian baru. Jumlah error dicatat berdasarkan hasil pemeriksaan halaman akhir. Target evaluasi adalah **0 error**.
+
+**WCAG — Kontras:**
+Tampilan diperiksa pada tema terang dan tema gelap untuk memastikan teks dan elemen antarmuka tetap dapat dibaca dengan kontras yang sesuai.
+
+**WCAG — Navigasi dengan Tab:**
+Bagian baru diperiksa menggunakan keyboard untuk memastikan elemen yang dapat menerima fokus dapat dicapai menggunakan tombol Tab.
+
+**WCAG — Tidak bergantung pada warna:**
+Informasi pada halaman tetap disampaikan menggunakan teks, struktur HTML, heading, dan elemen semantik sehingga makna halaman tidak hanya bergantung pada perbedaan warna.
